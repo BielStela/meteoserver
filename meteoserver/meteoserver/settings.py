@@ -77,7 +77,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'weather',
         'USER': 'pi',
-        'PASSWORD': os.getenv("DATABASE_PASSWORD"),
+        'PASSWORD': ,
         'HOST': 'localhost',
         'PORT': '',
         }
