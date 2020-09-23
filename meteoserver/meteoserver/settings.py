@@ -77,7 +77,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'weather',
         'USER': 'pi',
-        'PASSWORD': 'juji juji!',
+        'PASSWORD': os.getenv("DATABASE_PASSWORD"),
         'HOST': 'localhost',
         'PORT': '',
         }
@@ -132,7 +132,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '/home/pi/dev/meteoserver/logs/meteoserver.log',
+            'filename': '/home/pi/apps/meteoserver/logs/meteoserver.log',
             'formatter': 'verbose',
             },
         },
